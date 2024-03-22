@@ -1,0 +1,37 @@
+seu-projeto/
+│
+├── c:Download/Projetos programação/Teste animação/audio
+│   └── More Than Words Extreme.mp3
+│
+└── index.html
+
+
+/* Estilos gerais */
+body {
+    font-family: "Brush Script MT", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita que a página faça scroll */
+  }
+  
+  /* Estilos específicos para o texto "Julia" */
+  .texto {
+    color: darkred;
+    font-size: 46px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000;
+    animation: moveText 2s infinite, neonShadow 1s infinite;
+  }
+  
+  @keyframes moveText {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes neonShadow {
+    0% {
+      text-shadow: 0 0 10px hsl(0, 0%, 100%), 0 0 20px hsl(0, 0%, 100%), 0 0 30px hsl(0, 0%, 100%), 0 0 40px hsl(0, 0%, 100%), 0 0 70px hsl(0, 0%, 100%), 0 0 80px hwb(0 100% 0%), 0 0 100px hsl(0, 0%, 100%), 0 0 150px hsl(0, 0%, 100%);
+    }
+    
